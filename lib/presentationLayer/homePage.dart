@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../styles/Mycolors.dart';
+
 class HomePage extends StatefulWidget {
   static const String routeName = 'home';
 
@@ -15,7 +17,7 @@ class _HomeScreenState extends State<HomePage> {
     return SafeArea(child: Scaffold(
 
       body:Container(
-        color: Colors.black,
+        color: Mycolors.black,
         child: Column(
           children: [
             SizedBox(height: height*.03,),
@@ -24,7 +26,7 @@ class _HomeScreenState extends State<HomePage> {
               fontSize: 35
             )),
             SizedBox(height: height*.09,),
-            Image.asset('assets/images/kilua.jpg'),
+            Image.asset('assets/images/whatsimg.PNG'),
             SizedBox(height: height*.1,),
             Text('Tab to accept our policies',style: TextStyle(
                 color: Colors.white,
