@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'presentationLayer/homePage.dart';
+import 'presentationLayer/landingPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,9 +14,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-        initialRoute:HomePage.routeName ,
+        initialRoute:LandingPage.routeName ,
         routes: {
-          HomePage.routeName:(context)=>HomePage(),
+          LandingPage.routeName:(context)=>LandingPage(),
         }
     );
   }
