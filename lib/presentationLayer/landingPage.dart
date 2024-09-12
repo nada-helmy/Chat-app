@@ -30,27 +30,27 @@ class _HomeScreenState extends State<LandingPage> {
             SizedBox(height: height*.09,),
             Image.asset('assets/images/whatsapp-dark-mode.webp'),
             SizedBox(height: height*.15,),
-            Text('Tab to accept our policies',style: TextStyle(
-                color: Colors.white,
-                fontSize: 25,
-              fontWeight: FontWeight.w600
-            )),
-            SizedBox(height: height*.01,),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  padding: EdgeInsets.all(12),
-                  backgroundColor: Color(0xff415b5b),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.zero,
-                  ),
-                ),
-              onPressed: (){
-
-                },
-                child: Text('Agree and Continue',style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,fontWeight: FontWeight.w600
-                ),))
+            // Text('Tab to accept our policies',style: TextStyle(
+            //     color: Colors.white,
+            //     fontSize: 25,
+            //   fontWeight: FontWeight.w600
+            // )),
+            // SizedBox(height: height*.01,),
+            // ElevatedButton(
+            //     style: ElevatedButton.styleFrom(
+            //       padding: EdgeInsets.all(12),
+            //       backgroundColor: Color(0xff415b5b),
+            //       shape: RoundedRectangleBorder(
+            //         borderRadius: BorderRadius.zero,
+            //       ),
+            //     ),
+            //   onPressed: (){
+            //
+            //     },
+            //     child: Text('Agree and Continue',style: TextStyle(
+            //       color: Colors.white,
+            //       fontSize: 30,fontWeight: FontWeight.w600
+            //     ),))
           ],
         ),
       )
