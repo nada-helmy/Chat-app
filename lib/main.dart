@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mini_whats_app/presentationLayer/login.dart';
-
-import 'presentationLayer/landingPage.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:mini_whats_app/features/auth/presentation_layer/login/views/login.dart';
+import 'features/home/views/landingPage.dart';
 import 'firebase_options.dart';
 
 
