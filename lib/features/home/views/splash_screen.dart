@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:mini_whats_app/features/auth/presentation/login/views/login.dart';
 
 import '../../../core/themes/Mycolors.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class SplashScreen extends StatefulWidget {
   static const String routeName = 'home';
