@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../../../../core/shared_widgets/customformfield.dart';
-import '../../../../home/views/landingPage.dart';
+import '../../../../home/views/splash_screen.dart';
 
 
 class Login extends StatefulWidget {
@@ -129,7 +129,7 @@ class _LoginState extends State<Login> {
           email: emailController.text,
           password: passController.text,
         );
-        Navigator.of(context).pushNamed(LandingPage.routeName);
+        Navigator.of(context).pushNamed(SplashScreen.routeName);
           setState(() {});
       } on FirebaseAuthException catch (e) {
         if (e.code == 'user-not-found') {

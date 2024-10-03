@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'features/auth/presentation/login/views/login.dart';
-import 'features/home/views/landingPage.dart';
+import 'features/home/views/splash_screen.dart';
 import 'firebase_options.dart';
 
 
@@ -21,9 +21,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-        initialRoute:Login.routeName ,
+        initialRoute:SplashScreen.routeName ,
         routes: {
-          LandingPage.routeName:(context)=>LandingPage(),
+          SplashScreen.routeName:(context)=>SplashScreen(),
           Login.routeName:(context)=>Login()
         }
     );
