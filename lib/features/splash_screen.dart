@@ -2,12 +2,12 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:mini_whats_app/features/auth/presentation/login/views/login.dart';
 
-import '../../../core/themes/Mycolors.dart';
+import '../core/themes/my_colors.dart';
+import 'auth/presentation/views/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
-  static const String routeName = 'home';
+  static const String routeName = 'splash';
 
   @override
   State<SplashScreen> createState() => _HomeScreenState();
@@ -21,7 +21,7 @@ class _HomeScreenState extends State<SplashScreen> {
     Timer(Duration(seconds: 3), () {
       // Navigate to another screen after 3 seconds
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (context) => Login()));
+          builder: (context) => LoginScreen()));
     });
   }
 

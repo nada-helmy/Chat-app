@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'features/auth/presentation/login/views/login.dart';
-import 'features/home/views/splash_screen.dart';
+import 'features/auth/presentation/views/login_screen.dart';
+import 'features/auth/presentation/views/register_screen.dart';
+import 'features/home/presentation/views/home.dart';
+import 'features/splash_screen.dart';
 import 'firebase_options.dart';
 
 
@@ -24,7 +26,9 @@ class MyApp extends StatelessWidget {
         initialRoute:SplashScreen.routeName ,
         routes: {
           SplashScreen.routeName:(context)=>SplashScreen(),
-          Login.routeName:(context)=>Login()
+          LoginScreen.routeName:(context)=>LoginScreen(),
+          RegisterScreen.routeName:(context)=>RegisterScreen(),
+          Home.routeName:(context)=>Home()
         }
     );
   }

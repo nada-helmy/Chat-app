@@ -1,14 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:mini_whats_app/core/themes/my_colors.dart';
 
 class Customformfield extends StatelessWidget {
   String labeltxt='';
+  String hint_txt='';
+  Widget? preIcon;
+  Widget? suffixIcon;
+  Function? onIconPressed;
   bool txtSecure;
   TextInputType type;
   String? Function(String?) validator;
   TextEditingController Controller;
+
   Customformfield({
+    required this.hint_txt,
     this.txtSecure=false,
+    this.onIconPressed,
     required this.labeltxt,
+    this.preIcon,
+    this.suffixIcon,
     this.type=TextInputType.text,
     required this.validator,
     required this.Controller});
@@ -29,27 +39,34 @@ class Customformfield extends StatelessWidget {
           errorStyle: TextStyle(fontSize:25),
           fillColor: Colors.white,
           filled: true,
+          hintText:hint_txt ,
+          prefixIcon: preIcon,
+          suffixIcon:suffixIcon  ,
           labelText:labeltxt ,
+          hintStyle: TextStyle(
+            color: Mycolors.grey,
+            fontSize: 25,
+          ),
           labelStyle: TextStyle(
-            color: Colors.grey,
+            color: Mycolors.grey,
             fontSize: 25,
           ),
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(30),
               borderSide:
-              BorderSide(color: Colors.blue.shade200, width: 3)),
+              BorderSide(color: Mycolors.grey, width: 3)),
           focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(15),
               borderSide:
-              BorderSide(color: Colors.blue.shade200, width: 3)),
+              BorderSide(color: Mycolors.primary, width: 3)),
           errorBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(30),
               borderSide:
-              BorderSide(color: Colors.red.shade300, width:2)),
+              BorderSide(color: Mycolors.red, width:2)),
           focusedErrorBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(15),
               borderSide:
-              BorderSide(color: Colors.red.shade300, width:2)),
+              BorderSide(color: Mycolors.red, width:2)),
         ),),
     );
   }
