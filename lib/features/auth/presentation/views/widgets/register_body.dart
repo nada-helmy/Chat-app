@@ -3,6 +3,7 @@ import 'package:mini_whats_app/features/auth/presentation/views/widgets/email_fi
 import 'package:mini_whats_app/features/auth/presentation/views/widgets/login_row.dart';
 import 'package:mini_whats_app/features/auth/presentation/views/widgets/name_field.dart';
 import 'package:mini_whats_app/features/auth/presentation/views/widgets/password_field.dart';
+import 'package:mini_whats_app/features/auth/presentation/views/widgets/phone_field.dart';
 import 'package:mini_whats_app/features/auth/presentation/views/widgets/register_button.dart';
 import 'package:mini_whats_app/features/auth/presentation/views/widgets/register_title.dart';
 import 'package:mini_whats_app/features/auth/presentation/views/widgets/whatsapp_logo.dart';
@@ -36,6 +37,10 @@ class RegisterBody extends StatelessWidget {
               height: height*.0009,
             ),
             EmailField(),
+            SizedBox(
+              height: height*.0009,
+            ),
+            PhoneField(),
             SizedBox(
               height: height*.0009,
             ),
