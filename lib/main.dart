@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:mini_whats_app/features/profile/presentation/views/profile_view.dart';
 import 'features/auth/presentation/views/login_screen.dart';
 import 'features/auth/presentation/views/register_screen.dart';
 import 'features/home/presentation/views/home.dart';
@@ -23,12 +24,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-        initialRoute:SplashScreen.routeName ,
+        initialRoute:ProfileView.routeName ,
         routes: {
           SplashScreen.routeName:(context)=>SplashScreen(),
           LoginScreen.routeName:(context)=>LoginScreen(),
           RegisterScreen.routeName:(context)=>RegisterScreen(),
-          Home.routeName:(context)=>Home()
+          Home.routeName:(context)=>Home(),
+          ProfileView.routeName:(context)=>ProfileView()
         }
     );
   }

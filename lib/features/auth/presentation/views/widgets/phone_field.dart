@@ -3,7 +3,7 @@ import 'package:mini_whats_app/core/shared_widgets/customformfield.dart';
 
 class PhoneField extends StatelessWidget {
 
-TextEditingController phoneController= TextEditingController();
+static TextEditingController phoneController= TextEditingController();
   @override
   Widget build(BuildContext context) {
 

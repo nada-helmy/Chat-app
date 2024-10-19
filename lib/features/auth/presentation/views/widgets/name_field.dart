@@ -3,7 +3,9 @@ import 'package:mini_whats_app/core/shared_widgets/customformfield.dart';
 
 class NameField extends StatelessWidget {
    NameField({super.key});
-  TextEditingController nameController=TextEditingController();
+
+  static TextEditingController nameController=TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Customformfield(
