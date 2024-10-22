@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mini_whats_app/features/home/presentation/views/widgets/home_body.dart';
+import 'package:mini_whats_app/features/menu/presentation/views/my_popup_menu_view.dart';
 
 class HomeView extends StatelessWidget {
   static const String routeName='home';
@@ -20,8 +21,7 @@ class HomeView extends StatelessWidget {
           SizedBox(
             width: width*.09,
           ),
-          InkWell(
-              child: Icon(Icons.more_vert_outlined,size: 30,)),
+          MyPopupMenuView()
         ],
       ),
       body:HomeBody() ,
