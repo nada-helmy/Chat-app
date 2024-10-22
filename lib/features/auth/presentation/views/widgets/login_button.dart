@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mini_whats_app/core/shared_widgets/custom_button.dart';
 import 'package:mini_whats_app/features/auth/presentation/views/register_screen.dart';
 import 'package:mini_whats_app/features/auth/presentation/views/widgets/login_body.dart';
-import 'package:mini_whats_app/features/home/presentation/views/home.dart';
+import 'package:mini_whats_app/features/home/presentation/views/home_view.dart';
 
 class LoginButton extends StatefulWidget {
    LoginButton({super.key});
@@ -24,7 +24,7 @@ class _LoginButtonState extends State<LoginButton> {
   }
    login() {
     if (widget.formKy.currentState!.validate() == true) {
-        Navigator.of(context).pushNamed(Home.routeName);
+        Navigator.of(context).pushNamed(HomeView.routeName);
         setState(() {});
     }
   }
