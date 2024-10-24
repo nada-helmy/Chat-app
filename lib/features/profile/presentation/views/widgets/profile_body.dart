@@ -16,7 +16,11 @@ class ProfileBody extends StatelessWidget {
       appBar: AppBar(
         title: Text('Profile',
           style: TextStyle(color: Mycolors.black,fontSize: 35),),
-        leading: Icon(Icons.arrow_back,size: 30,color: Mycolors.primary,),
+        leading: InkWell(
+          onTap: () {
+            Navigator.pop(context);
+          },
+            child: Icon(Icons.arrow_back,size: 30,color: Mycolors.primary,)),
       ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),

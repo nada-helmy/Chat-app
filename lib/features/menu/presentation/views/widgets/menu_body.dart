@@ -12,8 +12,7 @@ class MenuBody extends StatelessWidget {
         if(value==0)
         {Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => ProfileView()),
-        );}
+          MaterialPageRoute(builder: (context) => ProfileView()),);}
         else if(value==1)
           {Navigator.push(
                 context,

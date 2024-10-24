@@ -43,7 +43,7 @@ class _HomeBodyState extends State<HomeBody> {
               label: 'chats'
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.chat),
+              icon: Icon(Icons.camera_alt),
               label: 'status'
           ),
           BottomNavigationBarItem(
