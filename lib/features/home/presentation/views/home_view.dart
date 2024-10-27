@@ -5,6 +5,8 @@ import 'package:mini_whats_app/features/menu/presentation/views/my_popup_menu_vi
 class HomeView extends StatelessWidget {
   static const String routeName='home';
 
+  const HomeView({super.key});
+
   @override
   Widget build(BuildContext context) {
 
@@ -12,12 +14,13 @@ class HomeView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: const Text('WhatsUp',style: TextStyle(
           fontSize: 30,
           fontWeight: FontWeight.bold
         ),),
         actions: [
-          Icon(Icons.search_rounded,size: 30,),
+          const Icon(Icons.search_rounded,size: 30,),
           SizedBox(
             width: width*.09,
           ),
