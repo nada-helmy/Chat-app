@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mini_whats_app/core/shared_widgets/custom_button.dart';
-import 'package:mini_whats_app/features/auth/presentation/views/register_screen.dart';
 import 'package:mini_whats_app/features/auth/presentation/views/widgets/login_body.dart';
 import 'package:mini_whats_app/features/home/presentation/views/home_view.dart';
 
